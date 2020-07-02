@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %} About {% endblock title %}
+
+{% block body %}
+<div class="container-fluid px-0 mb-3">
+    <img src="https://source.unsplash.com/1200x400/?phone,cupcakes" class="d-block w-100 mx-0" alt="...">
+</div>
+<div class="container mb-3 py-4">
+    <h1 class="text-center">About Us</h1>
+    {% csrf_token %}
+        <div class="text-center">
+        <p>Sourav and Vaibhav are the co-founders of Sourav Cupcake, stars of Cupcake Cam LIVE and DC Cupcakes on TLC, and best-selling authors of The Cupcake Diaries and Sweet Celebrations. Inspired by their grandmother, in 2008, the brothers followed their passion for baking and opened Sourav Cupcake in Pune, Maharashtra Since 2008, Sourav and Vaibhav have expanded Sourav Cupcake with locations in Mumbai, Mahabaleshwar, Lonavala. Cupcake also ships its cupcakes easily and faster.
+        <p>
+    <div class="card-group">
+  <div class="card">
+    <img class="card-img-top" src="/static/making.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">We are here to serve you the Best Cupcakes.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/static/baker.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">When you will taste our cupcakes you will visit everytime.</p>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="/static/finish.jpg" alt="Card image cap">
+    <div class="card-body">
+      <p class="card-text">The staff is very polite and best of all to serve you.</p>
+    </div>
+  </div>
+</div>
+        </div>
+
+
+  
+
+{% endblock body %}
+
